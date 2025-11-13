@@ -1,7 +1,8 @@
 const arr = [
     "asset/img/pic1.jpg",
     "asset/img/pic2.jpg",
-    "asset/img/pic3.jpg"
+    "asset/img/pic3.jpg",
+    "asset/img/pic4.jpg"
 ];
 let pic = document.querySelector('.Img')
 let label = document.querySelector('label')
@@ -9,18 +10,18 @@ let Bullets = document.querySelectorAll('.Bullet')
 console.log(Bullets);
 
 let i = 0;
-label.innerHTML = `${i + 1}/3`
+label.innerHTML = `${i + 1}/${arr.length}`
 function next() {
     console.log(i)
     if (i >= arr.length - 1) {
         i = 0;
         pic.src = arr[i];
-        label.innerHTML = `${i + 1}/3`
+        label.innerHTML = `${i + 1}/${arr.length}`
         UpdateBullet()
     } else {
         i++;
         pic.src = arr[i];
-        label.innerHTML = `${i + 1}/3`
+        label.innerHTML = `${i + 1}/${arr.length}`
         UpdateBullet()
     }
 }
@@ -29,12 +30,12 @@ function perivous() {
     if (i <= 0) {
         i = arr.length - 1
         pic.src = arr[i];
-        label.innerHTML = `${i + 1}/3`
+        label.innerHTML = `${i + 1}/${arr.length}`
         UpdateBullet()
     } else {
         i--;
         pic.src = arr[i];
-        label.innerHTML = `${i + 1}/3`
+        label.innerHTML = `${i + 1}/${arr.length}`
         UpdateBullet()
     }
 }
