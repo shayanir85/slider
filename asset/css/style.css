@@ -139,15 +139,19 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(255, 0, 0) , rgb(255, 136, 0));
+    background-image: url('../img/1967-Ford-Shelby-Mustang-GT500-003-2000.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(18, 18, 18) , rgba(60, 32, 0));
+
 }
 .btn {
-    margin: 5px;
+    margin: 20px;
     border: 1px solid white;
     color: whitesmoke;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
     background: transparent;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all 0.5s ease-in-out;
@@ -162,7 +166,8 @@ table {
 }
 
 .Img {
-    width: 600px;
+    width: 1000px;
+    border-radius: 10px;
 }
 
 label {
@@ -171,15 +176,18 @@ label {
     width: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    border-radius: 5px;
     position: relative;
-    top: -25%;
-    left: 6%;
+    top: -315px;
+    left: 170px;
+    z-index: 100;
 }
 
 .Bullets{
-    position: absolute;
+    position: relative;
     height: 20px;
-    top: 80%;
+    left: -580px;
+    top: 320px;
     text-align: center;
 }
 .Bullet{
@@ -187,7 +195,7 @@ label {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #474747;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
